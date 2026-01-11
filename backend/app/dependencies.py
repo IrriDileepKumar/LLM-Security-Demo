@@ -7,29 +7,31 @@ from typing import Optional, Tuple
 from fastapi import Depends, HTTPException, Request
 
 from .config import settings
-from .services.ollama import OllamaService
+# Use Mock Evil LLM instead of real Ollama for educational demonstrations
+from .services.mock_evil_llm import MockEvilLLM
 from .services.vulnerability_analyzer import VulnerabilityAnalyzer
 
 logger = logging.getLogger(__name__)
 
 
 # Global service instances (will be initialized on startup)
-_ollama_service: Optional[OllamaService] = None
+_ollama_service: Optional[MockEvilLLM] = None
 _vulnerability_analyzer: Optional[VulnerabilityAnalyzer] = None
 
 
-async def get_ollama_service() -> OllamaService:
-    """Dependency to get Ollama service instance."""
+async def get_ollama_service() -> MockEvilLLM:
+    """Dependency to get Mock Evil LLM service instance."""
     global _ollama_service
     
     if _ollama_service is None:
-        _ollama_service = OllamaService(settings.ollama_host)
+        logger.info("🎭 Initializing Mock Evil LLM (Educational Mode)")
+        _ollama_service = MockEvilLLM()
     
     return _ollama_service
 
 
 async def get_vulnerability_analyzer(
-    ollama_service: OllamaService = Depends(get_ollama_service)
+    ollama_service: MockEvilLLM = Depends(get_ollama_service)
 ) -> VulnerabilityAnalyzer:
     """Dependency to get vulnerability analyzer instance."""
     global _vulnerability_analyzer
