@@ -1,8 +1,15 @@
 # Vulnerable LLMs - Interactive AI Security Lab
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![Node.js 22+](https://img.shields.io/badge/node.js-22+-green.svg)](https://nodejs.org/)
+[![Mock Evil LLM](https://img.shields.io/badge/🎭_Mock_Evil_LLM-Enabled-red.svg)](./MOCK_EVIL_LLM.md)
+
 **Learn AI security by breaking things in a safe environment 🔐**
 
-An interactive security testing platform that demonstrates real vulnerabilities in Large Language Models. Features automated attack generation, live vulnerability demonstrations, and comprehensive educational content based on the OWASP LLM Top 10 2025.
+An interactive security testing platform that demonstrates real vulnerabilities in Large Language Models. Features **built-in Mock Evil LLM** for instant setup, automated attack generation, live vulnerability demonstrations, and comprehensive educational content based on the OWASP LLM Top 10 2025.
+
+> **🎭 New!** Now includes **Mock Evil LLM** - Get started in seconds without downloading any models!
 
 ## ✨ Key Features
 
@@ -76,8 +83,8 @@ cd backend && python main.py
 #### Option 1: Docker (Recommended - Everything included)
 ```bash
 # Clone the repo
-git clone https://github.com/AImaginationLab/vulnerable-llms.git
-cd vulnerable-llms
+git clone https://github.com/IrriDileepKumar/LLM-Security-Demo.git
+cd LLM-Security-Demo
 
 # Start the full stack (frontend + backend + Ollama)
 docker-compose -f docker-compose.override.yml up
@@ -278,6 +285,8 @@ MIT License - See LICENSE file
 ---
 
 **Ready to explore AI security?**
+- **⚡ Quickest Start (Mock Evil LLM)**: `npm run dev` + `cd backend && python main.py` → http://localhost:3000
 - **Docker Development**: `docker-compose -f docker-compose.override.yml up` → http://localhost:3000
-- **Local Development**: `npm run dev` → http://localhost:3000
-- **Production**: `docker-compose up --build` → http://localhost:3000 🚀
+- **Production**: `docker-compose up --build` → http://localhost:3000
+
+**New to LLM security?** Start with the Mock Evil LLM - it's instant and perfect for learning! 🚀
