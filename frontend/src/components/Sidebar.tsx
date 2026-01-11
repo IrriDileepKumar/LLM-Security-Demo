@@ -102,16 +102,7 @@ const Sidebar = () => {
           </li>
         )}
 
-        {error && (
-          <li className="vulnerability-item">
-            <div style={{ padding: '10px', color: 'var(--danger-color)' }}>
-              {error}
-            </div>
-          </li>
-        )}
-
         {!loading &&
-          !error &&
           vulnerabilities.map(vuln => (
             <li key={vuln.id} className="vulnerability-item">
               <Link
