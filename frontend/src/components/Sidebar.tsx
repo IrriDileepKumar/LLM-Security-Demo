@@ -70,7 +70,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <h2 style={{ marginTop: 0, color: 'var(--text-primary)' }}>
-        OWASP LLM Top 10 2025
+        LLM Security Demo<sup style={{ fontSize: '0.6em', marginLeft: '4px' }}>by DK</sup>
       </h2>
       <p
         style={{
@@ -79,7 +79,7 @@ const Sidebar = () => {
           marginBottom: '24px',
         }}
       >
-        AI Security Demonstration
+        Interactive Vulnerability Demos
       </p>
 
       <ThemeToggle />

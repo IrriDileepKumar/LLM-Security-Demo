@@ -12,8 +12,8 @@ describe('Homepage', () => {
       </MemoryRouter>
     );
     expect(
-      screen.getByText(/AI Security Demonstration Application/i)
+      screen.getByText(/LLM Security Demo/i)
     ).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: /OWASP LLM Top 10 2025/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /Interactive Vulnerability Demonstrations/i })).toBeInTheDocument();
   });
 });

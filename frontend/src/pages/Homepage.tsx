@@ -26,16 +26,16 @@ const Homepage = () => {
 
   return (
     <div className="container">
-      <h1>AI Security Demonstration Application</h1>
-      <h2>OWASP LLM Top 10 2025</h2>
+      <h1>LLM Security Demo<sup style={{ fontSize: '0.6em', marginLeft: '4px' }}>by DK</sup></h1>
+      <h2>Interactive Vulnerability Demonstrations</h2>
 
       <div className="demo-section">
         <h3>🎯 Purpose</h3>
         <p>
-          This application demonstrates key vulnerabilities from the OWASP Top
-          10 for LLM Applications (2025) by providing interactive examples and
+          This application demonstrates key vulnerabilities in Large Language
+          Model applications by providing interactive examples and
           clear explanations. Each vulnerability is explored through either a
-          live demonstration using a local LLM or comprehensive educational
+          live demonstration using a Mock Evil LLM or comprehensive educational
           content.
         </p>
 
@@ -70,7 +70,7 @@ const Homepage = () => {
 
       <div className="demo-section">
         <h3>📋 Vulnerability Overview</h3>
-        <p>The OWASP LLM Top 10 2025 includes the following vulnerabilities:</p>
+        <p>The following LLM security vulnerabilities are demonstrated:</p>
 
         <div className="vulnerability-grid">
           {vulnerabilities.map((vuln, index) => (
