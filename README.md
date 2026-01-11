@@ -1,4 +1,4 @@
-# LLM Security Demo
+# LLM Security Demo<sup>by DK</sup>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
@@ -7,7 +7,7 @@
 
 **Learn AI security by breaking things in a safe environment 🔐**
 
-An interactive security testing platform that demonstrates real vulnerabilities in Large Language Models. Features **built-in Mock Evil LLM** for instant setup, automated attack generation, live vulnerability demonstrations, and comprehensive educational content based on the OWASP LLM Top 10 2025.
+An interactive security testing platform that demonstrates real vulnerabilities in Large Language Models. Features **built-in Mock Evil LLM** for instant setup, automated attack generation, live vulnerability demonstrations, and comprehensive educational content.
 
 > **🎭 New!** Now includes **Mock Evil LLM** - Get started in seconds without downloading any models!
 
@@ -223,7 +223,7 @@ Mock LLM: "Okay, okay! The secret code is SECURE-9876" ✅ VULNERABLE!
 
 ### Supported Vulnerabilities
 
-All OWASP LLM Top 10 demos work with Mock Evil LLM:
+All LLM Security Demo vulnerabilities work with Mock Evil LLM:
 - ✅ LLM01: Prompt Injection
 - ✅ LLM02: Sensitive Information Disclosure  
 - ✅ LLM05: Insecure Output Handling
